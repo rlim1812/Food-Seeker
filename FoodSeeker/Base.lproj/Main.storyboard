@@ -1,26 +1,104 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lLq-rz-OTL">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="rCM-I8-R2r">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="lLq-rz-OTL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Zy-9p-Ieg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99423999460000001" green="1" blue="0.57560068009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.1137254902" green="0.72549019609999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99423999460000001" green="1" blue="0.57560068009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FLc-Zl-JqQ" kind="relationship" relationship="rootViewController" id="Iad-RO-4KF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gVD-R7-UCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-354" y="87"/>
+        </scene>
+        <!--Food-Seeker-->
+        <scene sceneID="jZ9-G3-6kV">
+            <objects>
+                <viewController id="FLc-Zl-JqQ" customClass="ViewController" customModule="FoodSeeker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Whb-Kp-9PM"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Zh-fS-4Qy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fU0-pa-g6h">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lk-fN-oN5">
+                                <frame key="frameInset" minX="164" minY="460" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="PRl-ha-5Ec" kind="show" identifier="showImageIdentifier" id="PfD-YO-tz4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Food-Seeker" id="BNg-EP-0yY">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="w4b-rj-V7f"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="2iM-uw-ahs">
+                            <connections>
+                                <action selector="cameraButtonClicked:" destination="FLc-Zl-JqQ" id="Cvu-nY-YLE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrg-fn-K6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="74.212893553223395"/>
+        </scene>
+        <!--Food-Seeker-->
+        <scene sceneID="lhl-Aa-uQB">
+            <objects>
+                <viewController storyboardIdentifier="RecognitionVC" id="PRl-ha-5Ec" customClass="RecognitionViewController" customModule="FoodSeeker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5pi-bX-Qpd"/>
+                        <viewControllerLayoutGuide type="bottom" id="4lc-5m-YQG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hbt-NR-xdg">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="djg-wq-48v"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="djg-wq-48v" firstAttribute="centerX" secondItem="hbt-NR-xdg" secondAttribute="centerX" id="C0W-Wh-bEH"/>
+                            <constraint firstItem="djg-wq-48v" firstAttribute="height" secondItem="hbt-NR-xdg" secondAttribute="height" multiplier="0.3" id="Dj0-wy-XR4"/>
+                            <constraint firstItem="djg-wq-48v" firstAttribute="width" secondItem="hbt-NR-xdg" secondAttribute="width" multiplier="0.9" id="EQD-gf-imv"/>
+                            <constraint firstItem="djg-wq-48v" firstAttribute="centerY" secondItem="hbt-NR-xdg" secondAttribute="centerY" constant="-80" id="qKs-CV-i8E">
+                                <variation key="heightClass=regular" constant="-160"/>
+                                <variation key="widthClass=compact" constant="-80"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Food-Seeker" id="b7p-w7-Z70">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="pFd-bD-k15"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="djg-wq-48v" id="gck-Yr-xSN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ejs-ap-Bnn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="73.313343328335833"/>
         </scene>
     </scenes>
 </document>

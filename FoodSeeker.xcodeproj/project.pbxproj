@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3790B3111DA4156C0060770C /* RecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3790B3101DA4156C0060770C /* RecognitionViewController.swift */; };
 		379A4CCF1DA2BFF30055D144 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379A4CCE1DA2BFF30055D144 /* AppDelegate.swift */; };
 		379A4CD11DA2BFF30055D144 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379A4CD01DA2BFF30055D144 /* ViewController.swift */; };
 		379A4CD41DA2BFF30055D144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379A4CD21DA2BFF30055D144 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		379A4CDC1DA2BFF30055D144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379A4CDA1DA2BFF30055D144 /* LaunchScreen.storyboard */; };
 		379A4CE71DA2BFF40055D144 /* FoodSeekerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379A4CE61DA2BFF40055D144 /* FoodSeekerTests.swift */; };
 		379A4CF21DA2BFF40055D144 /* FoodSeekerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379A4CF11DA2BFF40055D144 /* FoodSeekerUITests.swift */; };
+		379A4D041DA2C7370055D144 /* covered-food-tray-on-a-hand-of-hotel-room-service.png in Resources */ = {isa = PBXBuildFile; fileRef = 379A4D031DA2C7370055D144 /* covered-food-tray-on-a-hand-of-hotel-room-service.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3790B3101DA4156C0060770C /* RecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognitionViewController.swift; sourceTree = "<group>"; };
 		379A4CCB1DA2BFF30055D144 /* FoodSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379A4CCE1DA2BFF30055D144 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379A4CD01DA2BFF30055D144 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		379A4CED1DA2BFF40055D144 /* FoodSeekerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodSeekerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		379A4CF11DA2BFF40055D144 /* FoodSeekerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSeekerUITests.swift; sourceTree = "<group>"; };
 		379A4CF31DA2BFF40055D144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379A4D031DA2C7370055D144 /* covered-food-tray-on-a-hand-of-hotel-room-service.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "covered-food-tray-on-a-hand-of-hotel-room-service.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		379A4CCD1DA2BFF30055D144 /* FoodSeeker */ = {
 			isa = PBXGroup;
 			children = (
+				379A4D031DA2C7370055D144 /* covered-food-tray-on-a-hand-of-hotel-room-service.png */,
 				379A4CCE1DA2BFF30055D144 /* AppDelegate.swift */,
 				379A4CD01DA2BFF30055D144 /* ViewController.swift */,
 				379A4CD21DA2BFF30055D144 /* Main.storyboard */,
+				3790B3101DA4156C0060770C /* RecognitionViewController.swift */,
 				379A4CD81DA2BFF30055D144 /* Assets.xcassets */,
 				379A4CDA1DA2BFF30055D144 /* LaunchScreen.storyboard */,
 				379A4CDD1DA2BFF30055D144 /* Info.plist */,
@@ -238,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379A4D041DA2C7370055D144 /* covered-food-tray-on-a-hand-of-hotel-room-service.png in Resources */,
 				379A4CDC1DA2BFF30055D144 /* LaunchScreen.storyboard in Resources */,
 				379A4CD91DA2BFF30055D144 /* Assets.xcassets in Resources */,
 				379A4CD41DA2BFF30055D144 /* Main.storyboard in Resources */,
@@ -267,6 +274,7 @@
 			files = (
 				379A4CD11DA2BFF30055D144 /* ViewController.swift in Sources */,
 				379A4CD71DA2BFF30055D144 /* FoodSeeker.xcdatamodeld in Sources */,
+				3790B3111DA4156C0060770C /* RecognitionViewController.swift in Sources */,
 				379A4CCF1DA2BFF30055D144 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +526,7 @@
 				379A4CF81DA2BFF40055D144 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		379A4CF91DA2BFF40055D144 /* Build configuration list for PBXNativeTarget "FoodSeekerTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +535,7 @@
 				379A4CFB1DA2BFF40055D144 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		379A4CFC1DA2BFF40055D144 /* Build configuration list for PBXNativeTarget "FoodSeekerUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +544,7 @@
 				379A4CFE1DA2BFF40055D144 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
